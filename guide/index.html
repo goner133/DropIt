@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DROP IT! User Guide: install, first edit, every tab</title>
+<meta name="description" content="Install DROP IT! in a minute, make a first music edit in Premiere Pro in five minutes, then learn every tab: Music, Edit, Bursts, FX, Check and Match.">
+<link rel="canonical" href="https://dropit.pages.dev/guide/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DROP IT!">
+<meta property="og:title" content="DROP IT! User Guide: install, first edit, every tab">
+<meta property="og:description" content="Install DROP IT! in a minute, make a first music edit in Premiere Pro in five minutes, then learn every tab: Music, Edit, Bursts, FX, Check and Match.">
+<meta property="og:url" content="https://dropit.pages.dev/guide/">
+<meta property="og:image" content="https://dropit.pages.dev/og-cover.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0b13">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/unbounded-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts/fonts.bfedd955ca.css">
+<style>
+html{background:#0c0b13;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#0c0b13;color:#eeeaf6}
+[id]{scroll-margin-top:84px}
+
+body{margin:0;background:#0c0b13}
+.g a{color:#ff7fe3;text-decoration:none;font-weight:600}
+.g a:hover{color:#ffffff}
+.g h2{margin:0;font-family:Unbounded,sans-serif;font-weight:800;font-size:30px;line-height:1.1;letter-spacing:-0.02em;color:#ffffff;scroll-margin-top:24px}
+.g h3{margin:8px 0 0;font-family:Unbounded,sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:#ffffff;scroll-margin-top:24px}
+.g h4{margin:6px 0 0;font-family:Unbounded,sans-serif;font-weight:700;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#a99cff}
+.g p{margin:0;font-size:16px;line-height:1.7;color:#c9c3dd}
+.g strong{color:#ffffff;font-weight:700}
+.g ul,.g ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:9px;font-size:16px;line-height:1.65;color:#c9c3dd}
+.g li::marker{color:#ff3fd0;font-weight:700}
+.g code,.g kbd{font-family:'JetBrains Mono',monospace;font-size:13px;color:#ffffff;background:rgba(255,255,255,0.08);border:1px solid rgba(160,140,255,0.22);border-radius:6px;padding:1px 6px;white-space:nowrap}
+.g code{white-space:normal;overflow-wrap:anywhere;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.g .sec{display:flex;flex-direction:column;gap:16px;padding-top:56px;margin-top:8px;border-top:1px solid rgba(160,140,255,0.12)}
+.g .sec:first-child{border-top:0;padding-top:0;margin-top:0}
+.g .tbl{overflow-x:auto;border-radius:14px;border:1px solid rgba(160,140,255,0.16);background:rgba(255,255,255,0.02)}
+.g table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.55}
+.g th{text-align:left;font-family:Unbounded,sans-serif;font-weight:700;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8f89a6;padding:12px 16px;background:rgba(255,255,255,0.03);border-bottom:1px solid rgba(160,140,255,0.16)}
+.g td{padding:12px 16px;color:#c9c3dd;border-top:1px solid rgba(160,140,255,0.10);vertical-align:top}
+.g td:first-child{color:#ffffff;font-weight:600;white-space:nowrap}
+.g .steps{list-style:none;padding:0;counter-reset:st;gap:12px}
+.g .steps li{counter-increment:st;position:relative;padding-left:44px}
+.g .steps li::before{content:counter(st);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:14px;background:linear-gradient(135deg,#6b5cff,#ff3fd0);color:#ffffff;font:700 12px Unbounded,sans-serif;display:flex;align-items:center;justify-content:center}
+.g .note{border-radius:16px;padding:18px 20px;background:rgba(255,178,56,0.07);border:1px solid rgba(255,178,56,0.28);display:flex;flex-direction:column;gap:8px}
+.g .toc a{display:block;padding:7px 12px;border-radius:10px;color:#c9c3dd;font-weight:600;font-size:14px}
+.g .toc a:hover{background:rgba(255,255,255,0.05);color:#ffffff}
+.g .toc .sub{padding-left:24px;font-weight:500;font-size:13.5px;color:#8f89a6}
+.g .btn{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 20px;border-radius:21px;background:linear-gradient(90deg,#6b5cff,#ff3fd0);color:#ffffff!important;font:700 12.5px Unbounded,sans-serif;box-shadow:0 8px 28px rgba(255,63,208,0.28);white-space:nowrap}
+.g .chip{display:inline-flex;align-items:center;height:34px;padding:0 14px;border-radius:17px;background:rgba(255,255,255,0.05);border:1px solid rgba(160,140,255,0.22);color:#eeeaf6!important;font-weight:600;font-size:13.5px}
+@media (max-width: 900px){ .g-toc{display:none!important} }
+@media (max-width: 600px){
+  .g h2{font-size:24px}
+  .g-h1{font-size:34px!important}
+  .g-top-back{display:none!important}
+  .g-pad{padding-left:16px!important;padding-right:16px!important}
+  .g td,.g th{padding:10px 12px}
+}
+
+
+body{margin:0}
+@keyframes diPulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,63,208,0.60), 0 6px 22px rgba(107,92,255,0.45); }
+  70% { box-shadow: 0 0 0 14px rgba(255,63,208,0), 0 6px 30px rgba(255,63,208,0.55); }
+  100% { box-shadow: 0 0 0 0 rgba(255,63,208,0), 0 6px 22px rgba(107,92,255,0.45); }
+}
+@keyframes diShift { from { background-position: 0% 0; } to { background-position: 200% 0; } }
+@keyframes diTap { 0%, 60%, 100% { transform: translate(0, 0); } 75% { transform: translate(-3px, -3px) scale(0.92); } }
+.di-install { animation: diPulse 1.6s ease-out infinite, diShift 3s linear infinite; }
+.di-cursor { animation: diTap 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .di-install, .di-cursor { animation: none !important; } }
+.di-root { container-type: inline-size; container-name: di; }
+@container di (max-width: 420px) {
+  .di-side { display: none !important; }
+  .di-card { padding: 22px 20px 20px !important; }
+  .di-title { font-size: 17px !important; }
+  .di-body { font-size: 13.5px !important; }
+}
+
+
+body{margin:0}
+@container dp (max-width: 1000px) {
+  .dp-looks { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+}
+@container dp (max-width: 900px) {
+  .dp-layer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .dp-edit-pro { grid-template-columns: 1fr !important; }
+  .dp-edit-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .dp-two { grid-template-columns: 1fr !important; }
+}
+@container dp (max-width: 640px) {
+  .dp-sec { font-size: 8px !important; letter-spacing: 0.02em !important; }
+  .dp-layer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .dp-flash { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .dp-tiles4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .dp-steps2 { grid-template-columns: 1fr !important; }
+  .dp-looks { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@container dp (max-width: 480px) {
+  .dp-hide-sm { display: none !important; }
+  .dp-header { flex-wrap: wrap; height: auto !important; min-height: 54px; padding: 10px 12px !important; row-gap: 8px; }
+  .dp-section-name { font-size: 24px !important; }
+  .dp-plan { display: none !important; }
+  .dp-tc { font-size: 17px !important; }
+  .dp-lane-label { width: 92px !important; gap: 7px !important; padding-left: 4px !important; }
+  .dp-wave { left: 98px !important; }
+  .dp-live-playhead { left: calc(104px + (100% - 110px) * 0.3) !important; }
+  .dp-focus-row { padding-left: 98px !important; }
+  .dp-idle-msg { left: 98px !important; }
+  .dp-edit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .dp-layer-grid { grid-template-columns: 1fr !important; }
+  .dp-tip { left: 8px !important; width: calc(100% - 16px) !important; }
+  .dp-sec { font-size: 7px !important; letter-spacing: 0 !important; padding-left: 2px !important; }
+  .dp-tabs { padding: 8px !important; gap: 2px !important; overflow: visible !important; }
+  .dp-tabs > button { flex: 1 1 auto; justify-content: center; padding: 0 4px !important; font-size: 11.5px !important; gap: 0 !important; min-width: 0; }
+  .dp-tabn { display: none !important; }
+  .dp-tip > span:first-child { display: none !important; }
+}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "DROP IT!", "applicationCategory": "MultimediaApplication", "operatingSystem": "Windows", "description": "DROP IT! is a free Premiere Pro plugin that listens to the music on your timeline and finds the kicks, snares, hits and drops, so you cut where it actually lands.", "softwareVersion": "0.9.7", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "url": "https://coloformia.gumroad.com/l/dropit"}, "author": {"@type": "Person", "name": "Piotr Szmiłyk"}}</script>
+</head>
+<body>
+<script>window.DC_BASE="../"</script>
+<div id="app" data-dc-page="Guide"><div data-dc="Guide" data-dc-id="dc1" style="width: 100%;"><div class="g" style="overflow-x: clip; min-height: 100%; background: radial-gradient(50% 24% at 0% 0%, rgba(107,92,255,0.18), rgba(12,11,19,0) 70%), radial-gradient(40% 20% at 100% 14%, rgba(255,63,208,0.12), rgba(12,11,19,0) 70%), #0c0b13; color: #eeeaf6; font-family: Manrope, sans-serif">
+
+<header class="g-pad" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 70px; display: flex; align-items: center; gap: 16px; border-bottom: 1px solid rgba(160,140,255,0.12)">
+<a href="../index.html" style="font-family: Unbounded, sans-serif; font-weight: 800; font-size: 20px; color: #ffffff">drop<span style="color: #ff3fd0">it!</span></a>
+<span style="font: 500 12px 'JetBrains Mono', monospace; color: #8f89a6; white-space: nowrap">User guide · 0.9.7</span>
+<span style="flex: 1 1 auto"></span>
+<a class="g-top-back" href="../index.html" style="color: #c9c3dd; font-size: 14px">← Back to the site</a>
+<a class="btn" href="https://coloformia.gumroad.com/l/dropit" target="_blank" rel="noopener">Get it · $0+</a>
+</header>
+
+<section class="g-pad" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 48px; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font: 700 11px Unbounded, sans-serif; letter-spacing: 0.08em; color: #a99cff">USER GUIDE · VERSION 0.9.7 BETA · OCT 14, 2026</p>
+<h1 class="g-h1" style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 800; font-size: 54px; line-height: 1.02; letter-spacing: -0.03em; max-width: 900px">Install it, cut your first edit in five minutes, then learn every tab.</h1>
+<p style="max-width: 760px; font-size: 18px !important">DROP IT! is a Premiere Pro panel that listens to the music on your timeline and helps you cut on what you hear: kicks, snares, hits, builds and drops. This guide covers version 0.9.7 (beta).</p>
+<div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px">
+<a class="chip" href="#install">Install</a><a class="chip" href="#quick-start">First edit in 5 minutes</a><a class="chip" href="#tabs">Every tab</a><a class="chip" href="#keys">Keys</a><a class="chip" href="#faq">FAQ</a><a class="chip" href="#bugs">Report a bug</a>
+</div>
+</section>
+
+<div class="g-pad" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 120px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+
+<nav class="toc g-toc" aria-label="Contents" style="flex: 1 1 220px; max-width: 250px; display: flex; flex-direction: column; gap: 2px; padding: 16px 8px; border-radius: 16px; background: rgba(255,255,255,0.02); border: 1px solid rgba(160,140,255,0.12)">
+<span style="padding: 4px 12px 10px; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.08em; color: #8f89a6">CONTENTS</span>
+<a href="#need">What you need</a>
+<a href="#install">Installation</a>
+<a class="sub" href="#window">The Adobe window</a>
+<a class="sub" href="#update">Updating, uninstalling</a>
+<a class="sub" href="#problems">If something goes wrong</a>
+<a href="#quick-start">Quick start</a>
+<a href="#how">How it works</a>
+<a class="sub" href="#topbar">The top bar</a>
+<a class="sub" href="#live">The live view</a>
+<a class="sub" href="#modes">Simple and Pro</a>
+<a href="#tabs">Every tab in detail</a>
+<a class="sub" href="#music">1 Music</a>
+<a class="sub" href="#edit">2 Edit</a>
+<a class="sub" href="#bursts">3 Bursts</a>
+<a class="sub" href="#fx">4 FX</a>
+<a class="sub" href="#check">5 Check</a>
+<a class="sub" href="#match">6 Match</a>
+<a href="#settings">Settings</a>
+<a href="#keys">Keys</a>
+<a href="#limits">Known limits</a>
+<a href="#faq">FAQ</a>
+<a href="#bugs">Bugs and feedback</a>
+</nav>
+
+<main style="flex: 999 1 560px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 8px">
+
+<section class="sec" id="need">
+<h2>What you need</h2>
+<div class="tbl"><table>
+<tbody><tr><td>Premiere Pro</td><td>2026, version 26.0 or newer</td></tr>
+<tr><td>Computer</td><td>Windows. Mac is not tested yet: it may run, but there is no promise</td></tr>
+<tr><td>File</td><td><code>dropit-0.9.7.ccx</code>, from Gumroad</td></tr>
+<tr><td>Internet</td><td>Not needed. Everything runs on your computer</td></tr>
+<tr><td>Price</td><td>Beta: pay what you like, $0 is fine. Every beta update is free</td></tr>
+</tbody></table></div>
+<p>DROP IT! does the listening and the counting. Which shot, how long, what stays and what goes is still your call: <strong>the plugin suggests, you decide.</strong> Everything it does to your timeline can be undone.</p>
+</section>
+
+<section class="sec" id="install">
+<h2>Installation</h2>
+<p>Installing takes about a minute: double-click the .ccx file, confirm one Adobe window, open the panel in Premiere.</p>
+<ol class="steps">
+<li><strong>Download</strong> the .ccx file from <a href="https://coloformia.gumroad.com/l/dropit" target="_blank" rel="noopener">Gumroad</a>. Pay what you like, $0 works.</li>
+<li><strong>Close Premiere Pro</strong> if it is open. It is not strictly required, but it saves a restart later.</li>
+<li><strong>Double-click the .ccx file.</strong> The Creative Cloud app opens and installs the plugin into Premiere Pro. If nothing happens, open Creative Cloud, sign in, and double-click the file again.</li>
+<li><strong>Confirm the Adobe window</strong> shown below by clicking <strong>Install</strong>.</li>
+<li><strong>Open the panel</strong> in Premiere: <code>Window › UXP Plugins › DROP IT!</code>. Dock it under or next to the Program Monitor.</li>
+</ol>
+<h3 id="window">The "Install a non-marketplace plugin" window is normal</h3>
+<div style="max-width: 600px; margin: 6px 0"><div data-dc="InstallDialog" data-dc-id="dc2" style="width: 100%;"><div class="di-root" style="width: 100%; font-family: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif">
+<div role="img" aria-label="Creative Cloud asks: Install a non-marketplace plugin? This plugin will only be available locally and will replace any version of the plugin you may already have installed. Only install plugins from trusted developers and sources. Buttons: Cancel, Install." style="position: relative; border-radius: 12px; overflow: hidden; background: #8e8e90; box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08)">
+<div aria-hidden="true" style="height: 30px; display: flex; align-items: center; gap: 7px; padding: 0 12px; background: #9a9a9c; border-bottom: 1px solid rgba(0,0,0,0.06)">
+<span style="width: 10px; height: 10px; border-radius: 5px; background: #c46a62"></span><span style="width: 10px; height: 10px; border-radius: 5px; background: #c9a85a"></span><span style="width: 10px; height: 10px; border-radius: 5px; background: #6da463"></span>
+<span style="flex: 1 1 auto"></span><span style="width: 38%; height: 14px; border-radius: 7px; border: 1px solid rgba(0,0,0,0.18)"></span><span style="flex: 1 1 auto"></span>
+</div>
+<div style="position: relative; display: flex; min-height: 300px">
+<div class="di-side" aria-hidden="true" style="width: 22%; flex: none; background: #949496; border-right: 1px solid rgba(0,0,0,0.06); padding: 16px 12px; box-sizing: border-box; display: flex; flex-direction: column; gap: 11px">
+<span style="height: 7px; width: 54%; border-radius: 4px; background: rgba(0,0,0,0.14)"></span>
+<span style="height: 7px; width: 72%; border-radius: 4px; background: rgba(0,0,0,0.12)"></span>
+<span style="height: 20px; width: 100%; border-radius: 5px; background: rgba(0,0,0,0.16)"></span>
+<span style="height: 7px; width: 40%; border-radius: 4px; background: rgba(0,0,0,0.12)"></span>
+<span style="height: 7px; width: 64%; border-radius: 4px; background: rgba(0,0,0,0.12)"></span>
+<span style="height: 7px; width: 58%; border-radius: 4px; background: rgba(0,0,0,0.12)"></span>
+</div>
+<div style="flex: 1 1 auto; min-width: 0; display: flex; align-items: center; justify-content: center; padding: 34px 18px 46px">
+<div class="di-card" style="position: relative; width: 100%; max-width: 440px; box-sizing: border-box; background: #f8f8f8; border-radius: 6px; padding: 30px 32px 26px; box-shadow: 0 12px 40px rgba(0,0,0,0.28); color: #2c2c2c">
+<div class="di-title" style="font-weight: 700; font-size: 20px; line-height: 1.25; padding-bottom: 12px; border-bottom: 2px solid #e4e4e4">Install a non-marketplace plugin</div>
+<p class="di-body" style="margin: 16px 0 0; font-size: 14.5px; line-height: 1.55; color: #4b4b4b">This plugin will only be available locally and will replace any version of the plugin you may already have installed.</p>
+<p class="di-body" style="margin: 14px 0 0; font-size: 14.5px; line-height: 1.55; color: #4b4b4b">Only install plugins from trusted developers and sources.</p>
+<div style="display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 24px">
+<span style="height: 34px; padding: 0 16px; box-sizing: border-box; border-radius: 17px; border: 2px solid #6e6e6e; color: #4b4b4b; font-weight: 700; font-size: 14px; display: inline-flex; align-items: center">Cancel</span>
+<span style="position: relative; display: inline-flex">
+<span class="di-install" style="height: 34px; padding: 0 20px; border-radius: 17px; background: linear-gradient(90deg, #6b5cff, #ff3fd0, #6b5cff); background-size: 200% 100%; color: #ffffff; font-weight: 700; font-size: 14px; display: inline-flex; align-items: center">Install</span>
+<svg class="di-cursor" aria-hidden="true" width="34" height="38" viewBox="0 0 34 38" style="position: absolute; left: 62%; top: 62%; filter: drop-shadow(0 4px 10px rgba(107,92,255,0.6))"><path d="M3 2 L3 30 L10.5 23 L16 35 L21.5 32.5 L16 21 L26 21 Z" fill="#ffffff" stroke="#6b5cff" stroke-width="2.4" stroke-linejoin="round"></path></svg>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+<p>Creative Cloud shows this window for every plugin that does not come from Adobe's own marketplace. DROP IT! is sold on Gumroad, so you will see it once per install. It says the plugin is installed only on this computer and replaces any older version you have. Click <strong>Install</strong>.</p>
+<h3 id="update">Updating to a new beta</h3>
+<p>Download the new .ccx and double-click it, the same way. It replaces the old version; your settings and the music you already analyzed stay.</p>
+<h3>Uninstalling</h3>
+<p>Open the Creative Cloud app › <strong>Stock &amp; Marketplace › Plugins › Manage plugins</strong>. Find DROP IT!, open its menu (the three dots) and choose Uninstall.</p>
+<h3 id="problems">If something goes wrong</h3>
+<div class="tbl"><table>
+<tbody><tr><th>Problem</th><th>What to do</th></tr>
+<tr><td>No DROP IT! under Window › UXP Plugins</td><td>Restart Premiere Pro. Check that you run Premiere Pro 26.0 or newer (Help › About Premiere Pro)</td></tr>
+<tr><td>Double-clicking the .ccx does nothing</td><td>Open the Creative Cloud app and sign in, then double-click the file again</td></tr>
+<tr><td>Creative Cloud says the plugin is not compatible</td><td>Your Premiere Pro is older than 26.0. Update it in Creative Cloud</td></tr>
+<tr><td>The panel opens but stays empty</td><td>Close the panel, open it again from the Window menu. Still empty: restart Premiere</td></tr>
+<tr><td>Anything else</td><td>Email <a href="mailto:pszmilyk@gmail.com">pszmilyk@gmail.com</a> with your Premiere version and the log (see <a href="#bugs">Bugs and feedback</a>)</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="sec" id="quick-start">
+<h2>Quick start: a first edit in five minutes</h2>
+<p>The panel opens in Simple mode, with three tabs: Music, Edit and FX. That is all you need for a first cut.</p>
+<ol class="steps">
+<li><strong>Put the music on the timeline</strong>, on an audio track of your sequence.</li>
+<li><strong>Put your clips on the timeline too</strong>, on V1, in any order and any length. In Simple mode DROP IT! cuts from the clips on the timeline. These raw clips become the edit: what is left of them outside it is removed, and Undo brings them back.</li>
+<li><strong>Select the music clip</strong> (with only one audio track you can skip this) and press <strong>Analyze</strong> in the panel. It takes a few seconds and is remembered: the same music file never needs a second analysis.</li>
+<li><strong>Watch the live view.</strong> Press play in Premiere: the lamps flash on every kick and snare, and the big word at the top names the part of the song (INTRO, GROOVE, BUILD, DROP).</li>
+<li><strong>Open Edit and pick a style:</strong> Super calm, Calm, Balanced, Driving or Hype.</li>
+<li><strong>Press SURPRISE ME!</strong> Your clips are cut to the music on V1.</li>
+<li><strong>Not quite right?</strong> Press <strong>Another version</strong> for a different edit with the same style, or the Undo arrow in the top bar to go back.</li>
+<li><strong>Optional: Add FX on the drops.</strong> Empty adjustment layers land on the drops and big hits; drop your own effect on them. You need one adjustment layer in the project first: <code>Project panel › New Item › Adjustment Layer</code>.</li>
+</ol>
+<p>Want more control: the clip source, bursts, checking your own cuts? Switch the top bar to <strong>Pro</strong>.</p>
+</section>
+
+<section class="sec" id="how">
+<h2>How it works</h2>
+<p>DROP IT! analyzes the music once, shows you what it heard in the live view, and turns that into cuts, markers and layers on your timeline. The panel has three parts: the top bar, the live view and the tabs. Try it here: the tabs below are clickable.</p>
+<div style="margin: 8px 0"><div data-dc="Panel" data-dc-id="dc3" style="width: 100%;"><div style="position: relative; width: 100%; box-sizing: border-box; container-type: inline-size; container-name: dp; font-family: Manrope, sans-serif; color: #eeeaf6; font-size: 13px">
+
+
+<div style="position:relative;background:linear-gradient(180deg,#0c0b13 0%,#160d1e 70%,#1d0f24 100%);border:1px solid rgba(160,140,255,0.22);border-radius:18px;box-shadow:0 40px 120px rgba(0,0,0,0.6),0 0 90px rgba(107,92,255,0.20)">
+<header class="dp-header" style="position: relative; height: 54px; display: flex; align-items: center; gap: 8px; padding: 0 14px; border-bottom: 1px solid rgba(160,140,255,0.12); background: #0c0b13; border-radius: 18px 18px 0 0">
+<span style="font: 800 16px Unbounded, sans-serif; letter-spacing: -0.01em; color: #ffffff; margin-right: 4px; flex: none">drop<span style="color: #ff3fd0">it!</span></span>
+<button style="height:32px;padding:0 14px;display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;color:#ffffff;font:600 12.5px Manrope,sans-serif;cursor:pointer;flex:none;background:rgba(255,255,255,0.07)" title="Reads the music from the timeline and finds its beat, hits, chords and phrases."><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 8v0M5 5v6M8 3v10M11 6v4M14 8v0"></path></svg>Analyze</button>
+<button aria-label="Analyze an audio file" class="dp-hide-sm" style="width:32px;height:32px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:16px;cursor:pointer;background:rgba(255,255,255,0.07);color:#c9c3dd" title="Analyze an audio file instead of the timeline."><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M2 4.5h4l1.5 1.5H14v6.5H2z"></path></svg></button>
+<span style="flex: 1 1 auto; min-width: 0; padding: 0 4px; font-size: 12.5px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #7df3c9">track.wav  ·  6 sections  ·  analyzed in 1.4 s</span>
+<span class="dp-hide-sm" style="font: 500 11.5px 'JetBrains Mono', monospace; color: #eeeaf6; background: rgba(120,90,255,0.14); border-radius: 14px; padding: 7px 11px; white-space: nowrap; flex: none">124.0 BPM</span>
+<span class="dp-hide-sm" style="display: inline-flex; gap: 3px; flex: none">
+<button style="height:26px;min-width:30px;padding:0 8px;border:0;border-radius:999px;font:500 11.5px 'JetBrains Mono',monospace;cursor:pointer;background:rgba(255,255,255,0.07);color:#c9c3dd" title="Count the music at half this tempo.">½×</button>
+<button style="height:26px;min-width:30px;padding:0 8px;border:0;border-radius:999px;font:500 11.5px 'JetBrains Mono',monospace;cursor:pointer;background:rgba(255,255,255,0.07);color:#c9c3dd" title="Count the music at double this tempo.">2×</button>
+</span>
+<span style="display: inline-flex; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 3px; flex: none">
+<button style="height:26px;padding:0 11px;border:0;border-radius:13px;font:700 11.5px Manrope,sans-serif;cursor:pointer;background:transparent;color:#8f89a6" title="Simple: three tabs and the few controls an edit needs.">Simple</button>
+<button style="height:26px;padding:0 11px;border:0;border-radius:13px;font:700 11.5px Manrope,sans-serif;cursor:pointer;background:#ffffff;color:#0c0b13" title="Pro: everything.">Pro</button>
+</span>
+<button aria-label="Live sync" class="dp-hide-sm" style="width:32px;height:32px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:16px;cursor:pointer;background:rgba(125,243,201,0.12);color:#7df3c9" title="Live sync: the panel follows the Premiere playhead."><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 8h3l1.5-3.5 3 7 1.5-3.5h4"></path></svg></button>
+<button aria-label="Undo last action" class="dp-hide-sm" style="width:32px;height:32px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:16px;cursor:pointer;background:transparent;color:#5f5a74" title="Undo last action: puts the track back the way it was before the plugin last changed it."><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5L2.5 6 5 8.5M2.5 6h7a4 4 0 010 8H6"></path></svg></button>
+<button aria-label="Settings" class="dp-hide-sm" style="width:32px;height:32px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:16px;cursor:pointer;background:rgba(255,255,255,0.07);color:#c9c3dd" title="Timing, keys, reset to defaults, and the log."><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="2.2"></circle><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"></path></svg></button>
+<button aria-label="Full window" class="dp-hide-sm" style="width:32px;height:32px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:16px;cursor:pointer;background:rgba(255,255,255,0.07);color:#c9c3dd" title="Hide the controls and keep only the live view."><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"></path></svg></button>
+
+
+</header>
+
+<section style="padding: 12px 16px 14px; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: flex-start; gap: 14px">
+<span class="dp-section-name" style="font: 800 34px/1 Unbounded, sans-serif; letter-spacing: -0.01em; color: #ffffff; flex: none">DROP</span>
+<div class="dp-plan" style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; padding-top: 2px">
+<span style="font-size: 12.5px; color: #8f89a6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">kick + hits  ·  plan: 2 beats per shot</span>
+<span style="font-size: 14px; font-weight: 600; color: #ffffff">Hard cut on the first hit, hold, then cut on KICK.</span>
+</div>
+<div style="margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex: none">
+<span class="dp-tc" style="font: 500 22px/1 'JetBrains Mono', monospace; color: #ffffff">00:00:09:09</span>
+<span style="font-size: 12px; color: #8f89a6; white-space: nowrap">BREAK in 2.2 s</span>
+</div>
+</div>
+<div style="position: relative; height: 48px">
+<svg width="100%" height="32" viewBox="0 0 1000 44" preserveAspectRatio="none" style="position: absolute; left: 0; top: 0" aria-hidden="true">
+<defs><linearGradient id="dpE" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6b5cff"></stop><stop offset="0.45" stop-color="#ff3fd0"></stop><stop offset="1" stop-color="#38e8ff"></stop></linearGradient><linearGradient id="dpEf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6b5cff" stop-opacity="0.25"></stop><stop offset="0.45" stop-color="#ff3fd0" stop-opacity="0.25"></stop><stop offset="1" stop-color="#38e8ff" stop-opacity="0.25"></stop></linearGradient></defs>
+<path d="M0.0 32.5 L5.0 31.3 L10.0 31.1 L15.0 31.9 L20.0 33.2 L25.0 34.0 L30.0 33.7 L35.0 32.5 L40.0 31.3 L45.0 31.1 L50.0 31.9 L55.0 33.2 L60.0 34.0 L65.0 33.7 L70.0 32.5 L75.0 31.3 L80.0 31.1 L85.0 31.9 L90.0 33.2 L95.0 34.0 L100.0 33.6 L105.0 32.4 L110.0 31.3 L115.0 31.1 L120.0 31.9 L125.0 25.4 L130.0 26.2 L135.0 25.8 L140.0 24.6 L145.0 23.5 L150.0 23.3 L155.0 24.2 L160.0 25.5 L165.0 26.2 L170.0 25.8 L175.0 24.6 L180.0 23.5 L185.0 23.3 L190.0 24.2 L195.0 25.5 L200.0 26.2 L205.0 25.8 L210.0 24.5 L215.0 23.4 L220.0 23.3 L225.0 24.2 L230.0 25.5 L235.0 26.2 L240.0 25.8 L245.0 24.5 L250.0 23.4 L255.0 23.3 L260.0 24.2 L265.0 25.5 L270.0 26.2 L275.0 25.7 L280.0 24.5 L285.0 23.4 L290.0 23.3 L295.0 24.2 L300.0 25.5 L305.0 26.2 L310.0 25.7 L315.0 24.3 L320.0 22.8 L325.0 22.3 L330.0 22.8 L335.0 23.7 L340.0 24.0 L345.0 23.1 L350.0 21.4 L355.0 19.9 L360.0 19.4 L365.0 20.0 L370.0 20.9 L375.0 21.1 L380.0 20.2 L385.0 18.5 L390.0 17.0 L395.0 16.6 L400.0 17.2 L405.0 18.1 L410.0 18.2 L415.0 17.3 L420.0 15.6 L425.0 14.2 L430.0 13.7 L435.0 14.3 L440.0 15.2 L445.0 15.4 L450.0 14.4 L455.0 12.7 L460.0 11.3 L465.0 10.9 L470.0 11.5 L475.0 12.4 L480.0 12.5 L485.0 11.5 L490.0 9.9 L495.0 8.4 L500.0 6.4 L505.0 7.4 L510.0 8.7 L515.0 9.2 L520.0 8.6 L525.0 7.3 L530.0 6.3 L535.0 6.4 L540.0 7.4 L545.0 8.7 L550.0 9.2 L555.0 8.6 L560.0 7.3 L565.0 6.3 L570.0 6.4 L575.0 7.4 L580.0 8.7 L585.0 9.2 L590.0 8.6 L595.0 7.3 L600.0 6.3 L605.0 6.4 L610.0 7.5 L615.0 8.7 L620.0 9.2 L625.0 8.5 L630.0 7.3 L635.0 6.3 L640.0 6.4 L645.0 7.5 L650.0 8.7 L655.0 9.2 L660.0 8.5 L665.0 7.2 L670.0 6.3 L675.0 6.4 L680.0 7.5 L685.0 8.8 L690.0 9.2 L695.0 8.5 L700.0 7.2 L705.0 6.3 L710.0 6.4 L715.0 7.5 L720.0 8.8 L725.0 9.2 L730.0 8.5 L735.0 7.2 L740.0 6.3 L745.0 6.4 L750.0 29.7 L755.0 30.9 L760.0 31.3 L765.0 30.6 L770.0 29.3 L775.0 28.4 L780.0 28.6 L785.0 29.7 L790.0 30.9 L795.0 31.3 L800.0 30.5 L805.0 29.2 L810.0 28.4 L815.0 28.6 L820.0 29.7 L825.0 30.9 L830.0 31.3 L835.0 30.5 L840.0 29.2 L845.0 28.4 L850.0 28.6 L855.0 29.7 L860.0 30.9 L865.0 31.3 L870.0 30.5 L875.0 29.9 L880.0 29.2 L885.0 29.6 L890.0 30.9 L895.0 32.3 L900.0 32.8 L905.0 32.1 L910.0 31.0 L915.0 30.3 L920.0 30.8 L925.0 32.1 L930.0 33.4 L935.0 33.9 L940.0 33.2 L945.0 32.1 L950.0 31.5 L955.0 31.9 L960.0 33.3 L965.0 34.6 L970.0 35.0 L975.0 34.4 L980.0 33.2 L985.0 32.6 L990.0 33.1 L995.0 34.4 L1000.0 35.8 L1000 44 L0 44 Z" fill="url(#dpEf)"></path>
+<path d="M0.0 32.5 L5.0 31.3 L10.0 31.1 L15.0 31.9 L20.0 33.2 L25.0 34.0 L30.0 33.7 L35.0 32.5 L40.0 31.3 L45.0 31.1 L50.0 31.9 L55.0 33.2 L60.0 34.0 L65.0 33.7 L70.0 32.5 L75.0 31.3 L80.0 31.1 L85.0 31.9 L90.0 33.2 L95.0 34.0 L100.0 33.6 L105.0 32.4 L110.0 31.3 L115.0 31.1 L120.0 31.9 L125.0 25.4 L130.0 26.2 L135.0 25.8 L140.0 24.6 L145.0 23.5 L150.0 23.3 L155.0 24.2 L160.0 25.5 L165.0 26.2 L170.0 25.8 L175.0 24.6 L180.0 23.5 L185.0 23.3 L190.0 24.2 L195.0 25.5 L200.0 26.2 L205.0 25.8 L210.0 24.5 L215.0 23.4 L220.0 23.3 L225.0 24.2 L230.0 25.5 L235.0 26.2 L240.0 25.8 L245.0 24.5 L250.0 23.4 L255.0 23.3 L260.0 24.2 L265.0 25.5 L270.0 26.2 L275.0 25.7 L280.0 24.5 L285.0 23.4 L290.0 23.3 L295.0 24.2 L300.0 25.5 L305.0 26.2 L310.0 25.7 L315.0 24.3 L320.0 22.8 L325.0 22.3 L330.0 22.8 L335.0 23.7 L340.0 24.0 L345.0 23.1 L350.0 21.4 L355.0 19.9 L360.0 19.4 L365.0 20.0 L370.0 20.9 L375.0 21.1 L380.0 20.2 L385.0 18.5 L390.0 17.0 L395.0 16.6 L400.0 17.2 L405.0 18.1 L410.0 18.2 L415.0 17.3 L420.0 15.6 L425.0 14.2 L430.0 13.7 L435.0 14.3 L440.0 15.2 L445.0 15.4 L450.0 14.4 L455.0 12.7 L460.0 11.3 L465.0 10.9 L470.0 11.5 L475.0 12.4 L480.0 12.5 L485.0 11.5 L490.0 9.9 L495.0 8.4 L500.0 6.4 L505.0 7.4 L510.0 8.7 L515.0 9.2 L520.0 8.6 L525.0 7.3 L530.0 6.3 L535.0 6.4 L540.0 7.4 L545.0 8.7 L550.0 9.2 L555.0 8.6 L560.0 7.3 L565.0 6.3 L570.0 6.4 L575.0 7.4 L580.0 8.7 L585.0 9.2 L590.0 8.6 L595.0 7.3 L600.0 6.3 L605.0 6.4 L610.0 7.5 L615.0 8.7 L620.0 9.2 L625.0 8.5 L630.0 7.3 L635.0 6.3 L640.0 6.4 L645.0 7.5 L650.0 8.7 L655.0 9.2 L660.0 8.5 L665.0 7.2 L670.0 6.3 L675.0 6.4 L680.0 7.5 L685.0 8.8 L690.0 9.2 L695.0 8.5 L700.0 7.2 L705.0 6.3 L710.0 6.4 L715.0 7.5 L720.0 8.8 L725.0 9.2 L730.0 8.5 L735.0 7.2 L740.0 6.3 L745.0 6.4 L750.0 29.7 L755.0 30.9 L760.0 31.3 L765.0 30.6 L770.0 29.3 L775.0 28.4 L780.0 28.6 L785.0 29.7 L790.0 30.9 L795.0 31.3 L800.0 30.5 L805.0 29.2 L810.0 28.4 L815.0 28.6 L820.0 29.7 L825.0 30.9 L830.0 31.3 L835.0 30.5 L840.0 29.2 L845.0 28.4 L850.0 28.6 L855.0 29.7 L860.0 30.9 L865.0 31.3 L870.0 30.5 L875.0 29.9 L880.0 29.2 L885.0 29.6 L890.0 30.9 L895.0 32.3 L900.0 32.8 L905.0 32.1 L910.0 31.0 L915.0 30.3 L920.0 30.8 L925.0 32.1 L930.0 33.4 L935.0 33.9 L940.0 33.2 L945.0 32.1 L950.0 31.5 L955.0 31.9 L960.0 33.3 L965.0 34.6 L970.0 35.0 L975.0 34.4 L980.0 33.2 L985.0 32.6 L990.0 33.1 L995.0 34.4 L1000.0 35.8" fill="none" stroke="url(#dpE)" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+</svg>
+
+<span style="position:absolute;left:0.00%;top:8px;width:1px;height:26px;background:rgba(255,255,255,0.08)"></span>
+<span class="dp-sec" style="position:absolute;left:0.00%;top:34px;padding-left:3px;font:700 9.5px Unbounded,sans-serif;letter-spacing:0.06em;white-space:nowrap;color:#8f89a6">INTRO</span>
+
+<span style="position:absolute;left:12.50%;top:8px;width:1px;height:26px;background:rgba(255,255,255,0.08)"></span>
+<span class="dp-sec" style="position:absolute;left:12.50%;top:34px;padding-left:3px;font:700 9.5px Unbounded,sans-serif;letter-spacing:0.06em;white-space:nowrap;color:#8f89a6">GROOVE</span>
+
+<span style="position:absolute;left:31.25%;top:8px;width:1px;height:26px;background:rgba(255,255,255,0.08)"></span>
+<span class="dp-sec" style="position:absolute;left:31.25%;top:34px;padding-left:3px;font:700 9.5px Unbounded,sans-serif;letter-spacing:0.06em;white-space:nowrap;color:#8f89a6">BUILD</span>
+
+<span style="position:absolute;left:50.00%;top:8px;width:1px;height:26px;background:rgba(255,255,255,0.08)"></span>
+<span class="dp-sec" style="position:absolute;left:50.00%;top:34px;padding-left:3px;font:700 9.5px Unbounded,sans-serif;letter-spacing:0.06em;white-space:nowrap;color:#ffffff">DROP</span>
+
+<span style="position:absolute;left:75.00%;top:8px;width:1px;height:26px;background:rgba(255,255,255,0.08)"></span>
+<span class="dp-sec" style="position:absolute;left:75.00%;top:34px;padding-left:3px;font:700 9.5px Unbounded,sans-serif;letter-spacing:0.06em;white-space:nowrap;color:#8f89a6">BREAK</span>
+
+<span style="position:absolute;left:87.50%;top:8px;width:1px;height:26px;background:rgba(255,255,255,0.08)"></span>
+<span class="dp-sec" style="position:absolute;left:87.50%;top:34px;padding-left:3px;font:700 9.5px Unbounded,sans-serif;letter-spacing:0.06em;white-space:nowrap;color:#8f89a6">OUTRO</span>
+
+<span style="position: absolute; left: 60.71%; top: -3px; width: 6px; height: 40px; margin-left: -3px; background: rgba(255,63,208,0.35)"></span>
+<span style="position: absolute; left: 60.71%; top: -3px; width: 2px; height: 40px; margin-left: -1px; background: #ffffff"></span>
+</div>
+<div style="position: relative; margin-top: 2px; border: 1px solid rgba(160,140,255,0.12); border-radius: 14px; padding: 4px 6px 10px; background: rgba(8,7,13,0.35)">
+<div class="dp-wave" style="position: absolute; left: 142px; right: 6px; top: 4px; height: 260px; overflow: hidden; opacity: 0.26; pointer-events: none">
+<svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%" aria-hidden="true"><defs><linearGradient id="dpW" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#6b5cff"></stop><stop offset="1" stop-color="#ff3fd0"></stop></linearGradient></defs><path d="M-7.2 33.1h1.99v33.9h-1.99zM-3.3 33.2h1.99v33.7h-1.99zM0.7 32.1h1.99v35.7h-1.99zM4.7 30.6h1.99v38.9h-1.99zM8.7 28.0h1.99v44.1h-1.99zM12.6 29.0h1.99v42.0h-1.99zM16.6 33.5h1.99v32.9h-1.99zM20.6 28.6h1.99v42.8h-1.99zM24.6 30.9h1.99v38.2h-1.99zM28.6 34.5h1.99v30.9h-1.99zM32.5 34.7h1.99v30.6h-1.99zM36.5 33.1h1.99v33.9h-1.99zM40.5 34.4h1.99v31.2h-1.99zM44.5 33.7h1.99v32.5h-1.99zM48.5 29.4h1.99v41.3h-1.99zM52.4 29.4h1.99v41.2h-1.99zM56.4 29.4h1.99v41.3h-1.99zM60.4 33.5h1.99v32.9h-1.99zM64.4 31.7h1.99v36.5h-1.99zM68.4 32.0h1.99v36.0h-1.99zM72.3 29.8h1.99v40.3h-1.99zM76.3 29.5h1.99v41.0h-1.99zM80.3 34.8h1.99v30.4h-1.99zM84.3 10.1h1.99v79.9h-1.99zM88.3 14.0h1.99v72.1h-1.99zM92.2 16.6h1.99v66.8h-1.99zM96.2 15.3h1.99v69.5h-1.99zM100.2 18.9h1.99v62.1h-1.99zM104.2 19.8h1.99v60.3h-1.99zM108.1 23.2h1.99v53.7h-1.99zM112.1 28.5h1.99v42.9h-1.99zM116.1 30.4h1.99v39.2h-1.99zM120.1 28.9h1.99v42.3h-1.99zM124.1 26.7h1.99v46.6h-1.99zM128.0 25.8h1.99v48.3h-1.99zM132.0 33.3h1.99v33.5h-1.99zM136.0 29.7h1.99v40.5h-1.99zM140.0 28.3h1.99v43.5h-1.99zM144.0 28.2h1.99v43.6h-1.99zM147.9 32.1h1.99v35.7h-1.99zM151.9 31.3h1.99v37.3h-1.99zM155.9 31.1h1.99v37.8h-1.99zM159.9 33.9h1.99v32.2h-1.99zM163.9 34.9h1.99v30.3h-1.99zM167.8 34.5h1.99v31.0h-1.99zM171.8 31.2h1.99v37.6h-1.99zM175.8 28.0h1.99v43.9h-1.99zM179.8 35.2h1.99v29.6h-1.99zM183.8 30.1h1.99v39.9h-1.99zM187.7 33.6h1.99v32.9h-1.99zM191.7 35.0h1.99v29.9h-1.99zM195.7 30.9h1.99v38.2h-1.99zM199.7 29.8h1.99v40.4h-1.99zM203.7 29.5h1.99v41.0h-1.99zM207.6 29.7h1.99v40.5h-1.99zM211.6 33.8h1.99v32.4h-1.99zM215.6 32.0h1.99v36.0h-1.99zM219.6 32.7h1.99v34.7h-1.99zM223.5 28.6h1.99v42.8h-1.99zM227.5 35.8h1.99v28.5h-1.99zM231.5 34.7h1.99v30.7h-1.99zM235.5 10.9h1.99v78.3h-1.99zM239.5 14.2h1.99v71.5h-1.99zM243.4 19.5h1.99v60.9h-1.99zM247.4 18.0h1.99v64.1h-1.99zM251.4 18.1h1.99v63.9h-1.99zM255.4 19.9h1.99v60.2h-1.99zM259.4 21.1h1.99v57.7h-1.99zM263.3 28.1h1.99v43.9h-1.99zM267.3 24.8h1.99v50.4h-1.99zM271.3 23.6h1.99v52.8h-1.99zM275.3 25.1h1.99v49.8h-1.99zM279.3 29.5h1.99v41.0h-1.99zM283.2 25.4h1.99v49.2h-1.99zM287.2 29.5h1.99v41.0h-1.99zM291.2 26.5h1.99v47.0h-1.99zM295.2 32.8h1.99v34.4h-1.99zM299.2 29.6h1.99v40.7h-1.99zM303.1 29.0h1.99v42.1h-1.99zM307.1 28.3h1.99v43.3h-1.99zM311.1 30.7h1.99v38.6h-1.99zM315.1 28.7h1.99v42.6h-1.99zM319.0 28.5h1.99v43.1h-1.99zM323.0 27.0h1.99v46.0h-1.99zM327.0 34.9h1.99v30.2h-1.99zM331.0 28.5h1.99v43.0h-1.99zM335.0 28.5h1.99v43.0h-1.99zM338.9 30.7h1.99v38.7h-1.99zM342.9 28.6h1.99v42.8h-1.99zM346.9 28.5h1.99v42.9h-1.99zM350.9 31.4h1.99v37.1h-1.99zM354.9 32.8h1.99v34.5h-1.99zM358.8 33.8h1.99v32.4h-1.99zM362.8 35.1h1.99v29.9h-1.99zM366.8 33.5h1.99v33.1h-1.99zM370.8 33.4h1.99v33.2h-1.99zM374.8 33.6h1.99v32.7h-1.99zM378.7 33.7h1.99v32.6h-1.99zM382.7 33.5h1.99v33.0h-1.99zM386.7 16.6h1.99v66.8h-1.99zM390.7 24.1h1.99v51.8h-1.99zM394.7 28.2h1.99v43.5h-1.99zM398.6 21.9h1.99v56.3h-1.99zM402.6 30.2h1.99v39.7h-1.99zM406.6 26.8h1.99v46.3h-1.99zM410.6 30.1h1.99v39.8h-1.99zM414.5 29.8h1.99v40.5h-1.99zM418.5 32.7h1.99v34.6h-1.99zM422.5 28.6h1.99v42.8h-1.99zM426.5 31.9h1.99v36.2h-1.99zM430.5 33.3h1.99v33.3h-1.99zM434.4 36.9h1.99v26.3h-1.99zM438.4 34.6h1.99v30.8h-1.99zM442.4 34.3h1.99v31.4h-1.99zM446.4 34.6h1.99v30.7h-1.99zM450.4 37.4h1.99v25.2h-1.99zM454.3 35.3h1.99v29.4h-1.99zM458.3 35.8h1.99v28.3h-1.99zM462.3 38.1h1.99v23.7h-1.99zM466.3 34.0h1.99v31.9h-1.99zM470.3 37.3h1.99v25.4h-1.99zM474.2 37.7h1.99v24.7h-1.99zM478.2 31.8h1.99v36.4h-1.99zM482.2 32.1h1.99v35.8h-1.99zM486.2 38.3h1.99v23.4h-1.99zM490.2 36.2h1.99v27.6h-1.99zM494.1 34.2h1.99v31.7h-1.99zM498.1 33.6h1.99v32.7h-1.99zM502.1 34.1h1.99v31.7h-1.99zM506.1 37.4h1.99v25.2h-1.99zM510.0 35.8h1.99v28.5h-1.99zM514.0 34.1h1.99v31.8h-1.99zM518.0 39.3h1.99v21.5h-1.99zM522.0 36.7h1.99v26.7h-1.99zM526.0 35.4h1.99v29.3h-1.99zM529.9 35.2h1.99v29.6h-1.99zM533.9 33.2h1.99v33.6h-1.99zM537.9 19.0h1.99v62.1h-1.99zM541.9 20.1h1.99v59.9h-1.99zM545.9 27.0h1.99v46.0h-1.99zM549.8 26.5h1.99v47.0h-1.99zM553.8 26.8h1.99v46.5h-1.99zM557.8 26.0h1.99v48.0h-1.99zM561.8 31.7h1.99v36.6h-1.99zM565.8 28.4h1.99v43.2h-1.99zM569.7 33.0h1.99v34.0h-1.99zM573.7 30.2h1.99v39.6h-1.99zM577.7 35.9h1.99v28.3h-1.99zM581.7 31.7h1.99v36.7h-1.99zM585.7 34.8h1.99v30.4h-1.99zM589.6 35.7h1.99v28.5h-1.99zM593.6 32.1h1.99v35.9h-1.99zM597.6 35.8h1.99v28.4h-1.99zM601.6 36.8h1.99v26.5h-1.99zM605.5 32.8h1.99v34.4h-1.99zM609.5 37.6h1.99v24.8h-1.99zM613.5 36.2h1.99v27.6h-1.99zM617.5 34.6h1.99v30.8h-1.99zM621.5 36.7h1.99v26.7h-1.99zM625.4 36.5h1.99v27.0h-1.99zM629.4 38.8h1.99v22.4h-1.99zM633.4 33.4h1.99v33.2h-1.99zM637.4 35.6h1.99v28.9h-1.99zM641.4 34.0h1.99v31.9h-1.99zM645.3 36.8h1.99v26.4h-1.99zM649.3 31.9h1.99v36.1h-1.99zM653.3 33.8h1.99v32.4h-1.99zM657.3 34.3h1.99v31.4h-1.99zM661.3 35.8h1.99v28.4h-1.99zM665.2 36.9h1.99v26.3h-1.99zM669.2 38.6h1.99v22.8h-1.99zM673.2 38.5h1.99v23.0h-1.99zM677.2 39.3h1.99v21.5h-1.99zM681.2 36.8h1.99v26.4h-1.99zM685.1 37.9h1.99v24.1h-1.99zM689.1 20.4h1.99v59.1h-1.99zM693.1 22.8h1.99v54.5h-1.99zM697.1 27.3h1.99v45.3h-1.99zM701.1 24.2h1.99v51.7h-1.99zM705.0 30.1h1.99v39.8h-1.99zM709.0 25.1h1.99v49.8h-1.99zM713.0 26.5h1.99v46.9h-1.99zM717.0 34.4h1.99v31.2h-1.99zM720.9 29.6h1.99v40.9h-1.99zM724.9 35.5h1.99v29.0h-1.99zM728.9 32.0h1.99v36.0h-1.99zM732.9 34.1h1.99v31.8h-1.99zM736.9 35.3h1.99v29.4h-1.99zM740.8 36.2h1.99v27.5h-1.99zM744.8 34.2h1.99v31.5h-1.99zM748.8 34.9h1.99v30.3h-1.99zM752.8 35.9h1.99v28.2h-1.99zM756.8 34.9h1.99v30.2h-1.99zM760.7 37.3h1.99v25.3h-1.99zM764.7 32.7h1.99v34.6h-1.99zM768.7 32.0h1.99v36.0h-1.99zM772.7 35.9h1.99v28.2h-1.99zM776.7 36.9h1.99v26.2h-1.99zM780.6 37.7h1.99v24.6h-1.99zM784.6 32.2h1.99v35.7h-1.99zM788.6 38.0h1.99v24.1h-1.99zM792.6 33.9h1.99v32.1h-1.99zM796.6 32.5h1.99v34.9h-1.99zM800.5 35.8h1.99v28.4h-1.99zM804.5 35.0h1.99v29.9h-1.99zM808.5 36.8h1.99v26.5h-1.99zM812.5 35.1h1.99v29.8h-1.99zM816.4 39.9h1.99v20.3h-1.99zM820.4 34.0h1.99v32.0h-1.99zM824.4 37.4h1.99v25.2h-1.99zM828.4 33.8h1.99v32.4h-1.99zM832.4 37.6h1.99v24.8h-1.99zM836.3 39.2h1.99v21.6h-1.99zM840.3 22.8h1.99v54.4h-1.99zM844.3 19.7h1.99v60.5h-1.99zM848.3 26.0h1.99v48.0h-1.99zM852.3 26.4h1.99v47.2h-1.99zM856.2 31.5h1.99v37.1h-1.99zM860.2 24.6h1.99v50.7h-1.99zM864.2 33.1h1.99v33.8h-1.99zM868.2 32.8h1.99v34.4h-1.99zM872.2 30.5h1.99v39.0h-1.99zM876.1 31.7h1.99v36.5h-1.99zM880.1 32.8h1.99v34.4h-1.99zM884.1 35.3h1.99v29.3h-1.99zM888.1 36.5h1.99v27.0h-1.99zM892.1 33.4h1.99v33.2h-1.99zM896.0 29.7h1.99v40.5h-1.99zM900.0 29.8h1.99v40.4h-1.99zM904.0 30.1h1.99v39.8h-1.99zM908.0 34.8h1.99v30.5h-1.99zM911.9 37.2h1.99v25.7h-1.99zM915.9 37.8h1.99v24.3h-1.99zM919.9 37.2h1.99v25.6h-1.99zM923.9 38.7h1.99v22.6h-1.99zM927.9 38.2h1.99v23.6h-1.99zM931.8 35.4h1.99v29.2h-1.99zM935.8 31.9h1.99v36.3h-1.99zM939.8 39.2h1.99v21.6h-1.99zM943.8 34.6h1.99v30.8h-1.99zM947.8 31.5h1.99v36.9h-1.99zM951.7 35.9h1.99v28.3h-1.99zM955.7 32.8h1.99v34.4h-1.99zM959.7 39.4h1.99v21.2h-1.99zM963.7 33.3h1.99v33.4h-1.99zM967.7 38.5h1.99v23.1h-1.99zM971.6 35.2h1.99v29.7h-1.99zM975.6 39.5h1.99v21.1h-1.99zM979.6 33.2h1.99v33.6h-1.99zM983.6 32.6h1.99v34.8h-1.99zM987.6 35.7h1.99v28.6h-1.99zM991.5 25.3h1.99v49.4h-1.99zM995.5 33.1h1.99v33.7h-1.99zM999.5 32.6h1.99v34.8h-1.99zM1003.5 35.7h1.99v28.5h-1.99z" fill="url(#dpW)"></path></svg>
+</div>
+
+<div style="position: relative; display: flex; align-items: center; height: 52px">
+<span style="position:absolute;left:0;right:0;top:2px;bottom:2px;border-radius:9px;background:rgba(92,140,255,0.07)"></span>
+<div class="dp-lane-label" style="position: relative; width: 136px; flex: none; box-sizing: border-box; display: flex; align-items: center; gap: 10px; padding-left: 8px">
+<span style="width:16px;height:16px;flex:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(92,140,255,0.20)"><span style="width:10px;height:10px;border-radius:50%;background:rgba(92,140,255,0.6)"></span></span>
+<span style="flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:700 11.5px Unbounded,sans-serif;letter-spacing:0.08em;color:rgba(92,140,255,1)">KICK</span>
+<span class="dp-hide-sm" style="width: 16px; height: 16px; flex: none; box-sizing: border-box; border-radius: 4px; border: 1px solid rgba(255,255,255,0.28); font: 600 9px 'JetBrains Mono', monospace; color: #c9c3dd; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px">S</span>
+</div>
+<div style="position: relative; flex: 1 1 auto; height: 100%">
+<span style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(255,255,255,0.06)"></span>
+
+<span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:8.43%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#5C8CFF;border:1.5px solid rgba(255,255,255,0.35);opacity:0.42;box-shadow:0 0 10px rgba(92,140,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:23.55%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#5C8CFF;border:1.5px solid rgba(255,255,255,0.35);opacity:0.42;box-shadow:0 0 10px rgba(92,140,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:38.67%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#5C8CFF;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(92,140,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:53.79%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#5C8CFF;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(92,140,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:68.91%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#5C8CFF;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(92,140,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:84.03%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#5C8CFF;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(92,140,255,0.55)"></span>
+
+</div>
+</div>
+
+<div style="position: relative; display: flex; align-items: center; height: 52px">
+<span style="position:absolute;left:0;right:0;top:2px;bottom:2px;border-radius:9px;background:transparent"></span>
+<div class="dp-lane-label" style="position: relative; width: 136px; flex: none; box-sizing: border-box; display: flex; align-items: center; gap: 10px; padding-left: 8px">
+<span style="width:16px;height:16px;flex:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,154,60,0.20)"><span style="width:10px;height:10px;border-radius:50%;background:rgba(255,154,60,0.6)"></span></span>
+<span style="flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:700 11.5px Unbounded,sans-serif;letter-spacing:0.08em;color:rgba(255,154,60,0.75)">SNARE</span>
+<span class="dp-hide-sm" style="width: 16px; height: 16px; flex: none; box-sizing: border-box; border-radius: 4px; border: 1px solid rgba(255,255,255,0.28); font: 600 9px 'JetBrains Mono', monospace; color: #c9c3dd; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px">S</span>
+</div>
+<div style="position: relative; flex: 1 1 auto; height: 100%">
+<span style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(255,255,255,0.06)"></span>
+
+<span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:23.55%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FF9A3C;border:1.5px solid rgba(255,255,255,0.35);opacity:0.42;box-shadow:0 0 10px rgba(255,154,60,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:53.79%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FF9A3C;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(255,154,60,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:84.03%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FF9A3C;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(255,154,60,0.55)"></span>
+
+</div>
+</div>
+
+<div style="position: relative; display: flex; align-items: center; height: 52px">
+<span style="position:absolute;left:0;right:0;top:2px;bottom:2px;border-radius:9px;background:transparent"></span>
+<div class="dp-lane-label" style="position: relative; width: 136px; flex: none; box-sizing: border-box; display: flex; align-items: center; gap: 10px; padding-left: 8px">
+<span style="width:16px;height:16px;flex:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(79,227,161,0.20)"><span style="width:10px;height:10px;border-radius:50%;background:rgba(79,227,161,0.6)"></span></span>
+<span style="flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:700 11.5px Unbounded,sans-serif;letter-spacing:0.08em;color:rgba(79,227,161,0.75)">HI HAT</span>
+<span class="dp-hide-sm" style="width: 16px; height: 16px; flex: none; box-sizing: border-box; border-radius: 4px; border: 1px solid rgba(255,255,255,0.28); font: 600 9px 'JetBrains Mono', monospace; color: #c9c3dd; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px">S</span>
+</div>
+<div style="position: relative; flex: 1 1 auto; height: 100%">
+<span style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(255,255,255,0.06)"></span>
+
+<span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:0.87%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#4FE3A1;border:1.5px solid rgba(255,255,255,0.35);opacity:0.42;box-shadow:0 0 10px rgba(79,227,161,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:15.99%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#4FE3A1;border:1.5px solid rgba(255,255,255,0.35);opacity:0.42;box-shadow:0 0 10px rgba(79,227,161,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:31.11%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#4FE3A1;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(79,227,161,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:46.23%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#4FE3A1;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(79,227,161,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:61.35%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#4FE3A1;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(79,227,161,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:76.47%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#4FE3A1;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(79,227,161,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:91.59%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#4FE3A1;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(79,227,161,0.55)"></span>
+
+</div>
+</div>
+
+<div style="position: relative; display: flex; align-items: center; height: 52px">
+<span style="position:absolute;left:0;right:0;top:2px;bottom:2px;border-radius:9px;background:rgba(255,77,122,0.07)"></span>
+<div class="dp-lane-label" style="position: relative; width: 136px; flex: none; box-sizing: border-box; display: flex; align-items: center; gap: 10px; padding-left: 8px">
+<span style="width:16px;height:16px;flex:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,77,122,0.20)"><span style="width:10px;height:10px;border-radius:50%;background:rgba(255,77,122,0.6)"></span></span>
+<span style="flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:700 11.5px Unbounded,sans-serif;letter-spacing:0.08em;color:rgba(255,77,122,1)">HITS</span>
+<span class="dp-hide-sm" style="width: 16px; height: 16px; flex: none; box-sizing: border-box; border-radius: 4px; border: 1px solid rgba(255,255,255,0.28); font: 600 9px 'JetBrains Mono', monospace; color: #c9c3dd; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px">S</span>
+</div>
+<div style="position: relative; flex: 1 1 auto; height: 100%">
+<span style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(255,255,255,0.06)"></span>
+
+<span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:38.67%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FF4D7A;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(255,77,122,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:91.59%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FF4D7A;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(255,77,122,0.55)"></span>
+
+</div>
+</div>
+
+<div style="position: relative; display: flex; align-items: center; height: 52px">
+<span style="position:absolute;left:0;right:0;top:2px;bottom:2px;border-radius:9px;background:transparent"></span>
+<div class="dp-lane-label" style="position: relative; width: 136px; flex: none; box-sizing: border-box; display: flex; align-items: center; gap: 10px; padding-left: 8px">
+<span style="width:16px;height:16px;flex:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.20)"><span style="width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.6)"></span></span>
+<span style="flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:700 11.5px Unbounded,sans-serif;letter-spacing:0.08em;color:#ffffff">PLAN</span>
+<span class="dp-hide-sm" style="width: 16px; height: 16px; flex: none; box-sizing: border-box; border-radius: 4px; border: 1px solid rgba(255,255,255,0.28); font: 600 9px 'JetBrains Mono', monospace; color: #c9c3dd; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px">S</span>
+</div>
+<div style="position: relative; flex: 1 1 auto; height: 100%">
+<span style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(255,255,255,0.06)"></span>
+<span style="position:absolute;top:28%;height:44%;border-radius:4px;left:0.00%;width:7.49%;background:rgba(255,255,255,0.07)"></span><span style="position:absolute;top:28%;height:44%;border-radius:4px;left:9.36%;width:28.37%;background:rgba(255,255,255,0.07)"></span><span style="position:absolute;top:28%;height:44%;border-radius:4px;left:39.61%;width:28.37%;background:rgba(255,255,255,0.07)"></span><span style="position:absolute;top:28%;height:44%;border-radius:4px;left:69.85%;width:28.37%;background:rgba(255,255,255,0.07)"></span>
+<span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:8.43%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FFFFFF;border:1.5px solid rgba(255,255,255,0.35);opacity:0.42;box-shadow:0 0 10px rgba(255,255,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:38.67%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FFFFFF;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(255,255,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:68.91%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FFFFFF;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(255,255,255,0.55)"></span><span style="position:absolute;top:50%;box-sizing:border-box;border-radius:4px;left:99.15%;width:7px;height:33px;margin:-16.5px 0 0 -3.5px;background:#FFFFFF;border:1.5px solid rgba(255,255,255,0.35);opacity:1;box-shadow:0 0 10px rgba(255,255,255,0.55)"></span>
+<span style="position: absolute; left: 4px; top: 1px; font: 700 10px Manrope, sans-serif; color: #eeeaf6; white-space: nowrap">DROP  2 beats</span>
+</div>
+</div>
+
+
+<span class="dp-live-playhead" style="position: absolute; top: 4px; height: 260px; left: calc(148px + (100% - 154px) * 0.3); width: 6px; margin-left: -3px; background: rgba(255,63,208,0.35); pointer-events: none"></span>
+<span class="dp-live-playhead" style="position: absolute; top: 4px; height: 260px; left: calc(148px + (100% - 154px) * 0.3); width: 2px; margin-left: -1px; background: #ffffff; pointer-events: none"></span>
+
+
+<div class="dp-focus-row" style="display: flex; align-items: center; gap: 12px; padding: 8px 0 0 142px; min-width: 0">
+<span style="height: 22px; padding: 0 10px; border-radius: 11px; background: rgba(255,255,255,0.07); color: #c9c3dd; font: 600 11.5px Manrope, sans-serif; display: inline-flex; align-items: center; white-space: nowrap; flex: none">Focus · 4 more</span>
+<span style="font-size: 12px; color: #5f5a74; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">S solos a layer · drag to scrub · L shows all</span>
+</div>
+
+</div>
+</section>
+
+<div style="background: rgba(12,11,19,0.92); border-top: 1px solid rgba(160,140,255,0.08); border-radius: 0 0 18px 18px">
+<nav class="dp-tabs" style="display: flex; align-items: center; gap: 4px; padding: 10px 16px; overflow-x: auto" aria-label="Panel tabs">
+
+<button style="height:32px;padding:0 14px;border:0;border-radius:16px;font:700 12px Manrope,sans-serif;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;cursor:default;flex:none;background:rgba(255,255,255,0.14);color:#ffffff" title="What the plugin hears: one layer per kind of accent."><span class="dp-tabn" style="font: 500 10.5px 'JetBrains Mono', monospace; opacity: 0.55">1</span>Music</button>
+
+<button style="height:32px;padding:0 14px;border:0;border-radius:16px;font:700 12px Manrope,sans-serif;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;cursor:default;flex:none;background:transparent;color:#8f89a6" title="Choose how the edit should move, then let the plugin cut."><span class="dp-tabn" style="font: 500 10.5px 'JetBrains Mono', monospace; opacity: 0.55">2</span>Edit</button>
+
+<button style="height:32px;padding:0 14px;border:0;border-radius:16px;font:700 12px Manrope,sans-serif;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;cursor:default;flex:none;background:transparent;color:#8f89a6" title="Bursts: the plugin suggests where they fit, you pick the look."><span class="dp-tabn" style="font: 500 10.5px 'JetBrains Mono', monospace; opacity: 0.55">3</span>Bursts</button>
+
+<button style="height:32px;padding:0 14px;border:0;border-radius:16px;font:700 12px Manrope,sans-serif;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;cursor:default;flex:none;background:transparent;color:#8f89a6" title="Empty adjustment layers on the strong moments, ready for your effects."><span class="dp-tabn" style="font: 500 10.5px 'JetBrains Mono', monospace; opacity: 0.55">4</span>FX</button>
+
+<button style="height:32px;padding:0 14px;border:0;border-radius:16px;font:700 12px Manrope,sans-serif;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;cursor:default;flex:none;background:transparent;color:#8f89a6" title="Compare an edit you cut yourself with the accents, snap it onto them."><span class="dp-tabn" style="font: 500 10.5px 'JetBrains Mono', monospace; opacity: 0.55">5</span>Check</button>
+
+</nav>
+
+<div class="dp-body" style="position: relative; padding: 0 16px 16px">
+
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div><span style="display: inline-flex; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 3px"><button style="height:26px;padding:0 12px;border:0;border-radius:13px;font:700 11.5px Manrope,sans-serif;cursor:pointer;white-space:nowrap;background:#ffffff;color:#0c0b13">Layers</button><button style="height:26px;padding:0 12px;border:0;border-radius:13px;font:700 11.5px Manrope,sans-serif;cursor:pointer;white-space:nowrap;background:transparent;color:#8f89a6">Your sound</button></span></div>
+
+
+<div class="dp-layer-grid" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(160,140,255,0.10); border-radius: 14px; padding: 14px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px 28px">
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #e8e6f2;background:#e8e6f2"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #ffffff">BEAT</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 0%; border-radius: 2px; background: #e8e6f2"></span><span style="position: absolute; left: 0%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">93</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: transparent; color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #5c8cff;background:#5c8cff"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #5c8cff">KICK</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 60%; border-radius: 2px; background: #5c8cff"></span><span style="position: absolute; left: 60%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">18</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: rgba(255,255,255,0.10); color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #ffd36b;background:#ffd36b"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #ffd36b">BASS</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 70%; border-radius: 2px; background: #ffd36b"></span><span style="position: absolute; left: 70%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">27</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: rgba(255,255,255,0.10); color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #ff9a3c;background:#ff9a3c"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #ff9a3c">SNARE</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 60%; border-radius: 2px; background: #ff9a3c"></span><span style="position: absolute; left: 60%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">32</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: rgba(255,255,255,0.10); color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #4fe3a1;background:#4fe3a1"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #4fe3a1">HI-HAT</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 75%; border-radius: 2px; background: #4fe3a1"></span><span style="position: absolute; left: 75%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">117</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: rgba(255,255,255,0.10); color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #b48cff;background:#b48cff"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #b48cff">PERC</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 80%; border-radius: 2px; background: #b48cff"></span><span style="position: absolute; left: 80%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">25</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: rgba(255,255,255,0.10); color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #ff4d7a;background:#ff4d7a"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #ff4d7a">HITS</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 30%; border-radius: 2px; background: #ff4d7a"></span><span style="position: absolute; left: 30%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">29</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: transparent; color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #38e8ff;background:#38e8ff"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #38e8ff">CHORDS</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 70%; border-radius: 2px; background: #38e8ff"></span><span style="position: absolute; left: 70%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">16</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: transparent; color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; height: 22px; min-width: 0">
+<span style="width:11px;height:11px;flex:none;box-sizing:border-box;border-radius:6px;border:2px solid #ffa27a;background:transparent"></span>
+<span style="width: 64px; flex: none; font: 700 10.5px Unbounded, sans-serif; letter-spacing: 0.06em; white-space: nowrap; color: #ffa27a">CUSTOM</span>
+<span style="flex: 1 1 auto; min-width: 24px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); position: relative"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 72%; border-radius: 2px; background: #ffa27a"></span><span style="position: absolute; left: 72%; top: -6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: #ffffff"></span></span>
+<span style="width: 26px; flex: none; text-align: right; font: 500 11px 'JetBrains Mono', monospace; color: #8f89a6">0</span>
+<span style="width: 22px; height: 22px; flex: none; border-radius: 11px; background: transparent; color: #c9c3dd; font: 500 9.5px 'JetBrains Mono', monospace; display: inline-flex; align-items: center; justify-content: center">M</span>
+</div>
+
+</div>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<button style="height: 38px; padding: 0 18px; border: 0; border-radius: 999px; background: linear-gradient(90deg, #6b5cff, #ff3fd0); color: #ffffff; font: 700 12.5px Unbounded, sans-serif; box-shadow: 0 4px 18px rgba(255,63,208,0.22); display: inline-flex; align-items: center; gap: 8px"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2h6l-1 4 2 2H4l2-2zM8 8v6"></path></svg>Add markers</button>
+<span style="color: #8f89a6">on</span>
+<span style="display: inline-flex; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 3px"><span style="height: 26px; padding: 0 11px; border-radius: 13px; background: #ffffff; color: #0c0b13; font: 700 11.5px Manrope, sans-serif; display: inline-flex; align-items: center">Sequence</span><span style="height: 26px; padding: 0 11px; border-radius: 13px; color: #8f89a6; font: 700 11.5px Manrope, sans-serif; display: inline-flex; align-items: center">Music clip</span></span>
+<span style="height: 38px; padding: 0 16px; border-radius: 999px; background: rgba(255,255,255,0.07); color: #ffffff; font: 600 12.5px Manrope, sans-serif; display: inline-flex; align-items: center">Clear markers</span>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+</div></div></div>
+<h3>Analyze</h3>
+<p>Press <strong>Analyze</strong> with the music clip selected (nothing selected: the longest audio clip is used). A three-minute track takes about ten seconds the first time; after that the result is remembered for that file. The folder icon next to Analyze reads an audio file from disk instead.</p>
+<p>The analysis finds the tempo, the beat, the parts of the song (intro, groove, build, drop and others) and the accents in nine layers: BEAT, KICK, BASS, SNARE, HI-HAT, PERC, HITS, CHORDS and a CUSTOM frequency band you set.</p>
+<h3 id="topbar">The top bar</h3>
+<ul>
+<li><strong>Analyze</strong>, then the folder icon to analyze a file instead</li>
+<li><strong>Status line</strong>: what just happened, or what a greyed-out button is waiting for</li>
+<li><strong>Tempo</strong> with ½× and 2×. Whether a slow song is 67 or 134 BPM is a matter of feel; these keys count it at half or double. The beats stay on the same hits</li>
+<li><strong>Simple / Pro</strong> (see below)</li>
+<li><strong>Live sync</strong> (the pulse icon): on, the panel follows Premiere's playhead and moves it when you click in the panel. Off, it never touches the playhead; every button still works</li>
+<li><strong>Undo last action</strong>: takes back the plugin's last change, up to 8 steps</li>
+<li><strong>Settings</strong> (the gear): panel size, keys, reset, and the Log</li>
+</ul>
+<h3 id="live">The live view</h3>
+<ul>
+<li><strong>The section bar</strong> across the top shows the energy of the whole song as one line, with its parts named underneath. Click or drag on it to move the playhead.</li>
+<li><strong>The header</strong> names the part of the song you are in (GROOVE, BUILD, DROP), what to cut on there, the clock and how long until the next part.</li>
+<li><strong>The lanes</strong> show one layer each. Every mark is an accent; the lamp next to the name flashes when the playhead passes one. The music's waveform runs faintly behind all lanes.</li>
+<li><strong>PLAN</strong> shows where the plugin would cut; <strong>EDIT</strong> shows your own cuts after Check; <strong>BURSTS</strong> and <strong>FX</strong> show where those would go.</li>
+<li><strong>Focus</strong> shows only the lanes that matter in the current tab. Click "Focus · 4 more" or press <kbd>L</kbd> to see all of them.</li>
+<li><strong>S</strong> next to a lane solos it. Drag in the lanes to scrub; click a mark to jump to its frame.</li>
+</ul>
+<p>Premiere does not let a plugin start or stop playback, so Play stays in Premiere: click once in the timeline or the Program Monitor, then press the space bar.</p>
+<h3 id="modes">Simple and Pro</h3>
+<p>The panel starts in <strong>Simple</strong>: three tabs (Music, Edit, FX) and the few choices that matter for a first cut. <strong>Pro</strong> shows every tab and every control: Bursts, Check, Match, the clip source, fine-tuning. Switching only hides controls; it never resets them. Once you choose Pro, the panel stays in Pro.</p>
+<h3>The plugin suggests, you decide</h3>
+<p>DROP IT! never takes over your edit. It proposes: a plan of cuts, places where a burst fits, cuts that are a few frames off. You apply what you like.</p>
+<ul>
+<li>Everything the plugin puts on the timeline is one Undo away, up to 8 steps back, within one session of the panel.</li>
+<li>Your own clips, effects and adjustment layers are never changed. The plugin only replaces what it placed itself.</li>
+<li>Snap trims cuts; it never moves the picture inside a clip.</li>
+</ul>
+</section>
+
+<section class="sec" id="tabs">
+<h2>Every tab in detail</h2>
+<p>The tabs follow the order of work: Music, Edit, Bursts, FX, Check, and Match as an extra at the end. Simple mode shows Music, Edit and FX.</p>
+
+<h3 id="music">1 Music: Layers</h3>
+<p>One strip per layer: BEAT, KICK, BASS, SNARE, HI-HAT, PERC, HITS, CHORDS and CUSTOM.</p>
+<ul>
+<li><strong>The dot</strong> shows or hides a layer in the live view.</li>
+<li><strong>The fader</strong> sets how many marks a layer has: left keeps only the strongest, right keeps more.</li>
+<li><strong>CUSTOM</strong> is a frequency band you type in (for example 300 to 1200 Hz). Use it for a sound no other layer catches.</li>
+<li><strong>M</strong> includes the layer in Add markers.</li>
+<li><strong>Add markers</strong> writes coloured markers for the layers marked M, and replaces the markers it added before.</li>
+<li><strong>On Sequence / Music clip</strong>: Sequence puts them on the timeline ruler. Music clip puts them on the music clip itself, so they move with it.</li>
+<li><strong>Clear markers</strong> removes the plugin's markers from both places. Your own markers stay.</li>
+</ul>
+<h3>1 Music: Your sound</h3>
+<p>For the sound the built-in layers miss: a sampled kick under a rumble, a vocal chop, a cowbell, a riser hit. You pick it by ear, the plugin finds every repeat, and it becomes a lane of its own.</p>
+<ol class="steps">
+<li>Stop playback and put the playhead just before the sound.</li>
+<li>Press <strong>Play</strong>: the panel plays 0.6 s from the playhead.</li>
+<li>Pick the band where you hear the sound most clearly: All, Bass (below 150 Hz: kick, 808), Low (150 to 500 Hz), Mid (500 Hz to 3 kHz: snare, claps, vocals) or Air (above 3 kHz: hi-hats, cymbals). Or drag a box around the sound on the spectrum.</li>
+<li>Press <strong>Find this sound</strong> (key <kbd>F</kbd>). It finds the first clear hit and every moment it comes back.</li>
+<li>Walk through the results with <strong>Next</strong> (key <kbd>N</kbd>). <strong>Not this</strong> (key <kbd>X</kbd>) drops a wrong one, <strong>+ Example</strong> adds one it missed.</li>
+<li><strong>Match</strong> sets how close a repeat must be. Your sounds are saved with the analysis of that music file, up to four per file.</li>
+</ol>
+
+<h3 id="edit">2 Edit</h3>
+<p>Three steps, closed by <strong>SURPRISE ME!</strong>: Style (how the edit moves), Clips (what goes in), Make (what changes and how).</p>
+<h4>1 Style</h4>
+<ul>
+<li><strong>Super calm, Calm, Balanced, Driving, Hype</strong>: from long shots with no rush to as fast as the music allows. Super calm suits children's music, acoustic songs and a first dance: long shots, no bursts.</li>
+<li><strong>Speed</strong> fine-tunes the style. <strong>Holds</strong> sets how long the edit holds on a drop and how much the quiet and loud parts differ.</li>
+<li><strong>Cut before the hit</strong>, from -3 to 4 frames: 1 reads as on the beat, 0 is exactly on the hit, a negative number cuts after it.</li>
+<li>The three numbers underneath say what the style means for this track: the shot length where it is quiet, where it grooves, where it peaks.</li>
+</ul>
+<p>How an edit is built: the music is read in phrases, usually four bars. Held shots go first, at the start, on every drop and at the end. Between them the pace follows the energy and changes only where the music changes.</p>
+<h4>2 Clips</h4>
+<ul>
+<li><strong>Source</strong>: the clips on the timeline, the Project panel selection, or a bin. Only real footage is used; titles and mattes are left out.</li>
+<li><strong>Order</strong> (Random or In order), <strong>Part</strong> (where in a clip a shot starts) and <strong>Each clip once</strong>.</li>
+<li><strong>Opening and ending</strong>: Hold gives the first and last shot time to register, Half makes them half as long, Off treats them like any shot.</li>
+<li><strong>Make: Clips or Empty slots.</strong> Empty slots puts one coloured placeholder per shot, to judge a rhythm before any clip is in. <strong>Fill slots</strong> then fills them from the Source.</li>
+</ul>
+<h4>3 Make</h4>
+<ul>
+<li><strong>Selected shots get New clips or New cuts.</strong> Select shots on the timeline and press SURPRISE ME!: only those change. New clips keeps the cuts and swaps the clips; New cuts cuts the selected stretch again.</li>
+<li><strong>Bursts in the edit</strong>: Suggest (the edit has none; the Bursts tab shows where they fit), Auto (SURPRISE ME! puts them in), Off.</li>
+<li><strong>Version</strong>: every edit has a number. The arrows walk through the versions you made; type a number and press <strong>Run</strong> to make that exact edit again.</li>
+<li><strong>Fine-tune</strong>: Variation (how far a version may move from the plan), what changes (Rhythm, Clips) and a wished number of shots.</li>
+<li>Every press of SURPRISE ME! makes a new version on the same track. Clip sound goes to its own muted audio track; the music is never touched.</li>
+</ul>
+
+<h3 id="bursts">3 Bursts (Pro)</h3>
+<p>A burst is a run of very short shots into a hit, then a held shot. The plugin suggests where bursts fit this music; you choose the look, the place and the flash. <strong>In SURPRISE ME!</strong> at the top is the same switch as Bursts in the edit: Suggest, Auto or Off.</p>
+<h4>1 Look</h4>
+<div class="tbl"><table>
+<tbody><tr><th>Look</th><th>What it does</th></tr>
+<tr><td>Classic</td><td>Even shots, sixteenths</td></tr>
+<tr><td>Slot machine</td><td>Shorter and shorter into the hit</td></tr>
+<tr><td>Stutter</td><td>One clip, the same moment repeated (needs clips, not slots)</td></tr>
+<tr><td>Strobe</td><td>Even cuts with a white flash on each</td></tr>
+<tr><td>Hi-hat roll</td><td>Cuts on the hi-hats</td></tr>
+<tr><td>Flash only</td><td>No new cuts: only flash frames on the rhythm of the burst, over any edit</td></tr>
+<tr><td>Custom</td><td>Your own settings from Fine-tune</td></tr>
+</tbody></table></div>
+<h4>2 Where</h4>
+<ul>
+<li><strong>The preview</strong> on top shows what the picked suggestion would do: the shots before it, the burst, the held shot, and white ticks for flash frames.</li>
+<li><strong>The list</strong> under it has up to six suggestions, each with its time and reason: a run-up into a drop, a lift, a snare fill, a hi-hat roll. Click one to pick it; the playhead jumps just before it.</li>
+<li><strong>Apply</strong> puts the picked burst on the timeline. <strong>Apply all</strong> puts every suggestion in at once; one Undo takes them all back.</li>
+<li><strong>Burst here</strong> makes a burst at your own spot: into the strongest hit near the playhead, or inside the shots you selected.</li>
+<li>Bursts work on clips and on empty slots.</li>
+</ul>
+<h4>3 Flash</h4>
+<ul>
+<li><strong>Off, White, Black, Overexpose, Invert, B&amp;W.</strong> Flash frames go on their own track above the edit, so the clips underneath stay whole. Move them to change the rhythm.</li>
+<li>White and Black are clips the plugin brings into a DROP IT! bin. Overexpose, Invert and B&amp;W are copies of your adjustment layer with the effect on, so they need one adjustment layer in the project.</li>
+<li>In a vertical sequence the copies are scaled to cover the whole frame.</li>
+</ul>
+<p><strong>Fine-tune</strong>: Shape (Even, Faster, Slower), Speed (Auto, 8th, 16th, Triplet), Length (half a bar to two bars), Cut on (the beat grid or a layer), Clips (Nearby, One clip, Stutter, Any), flash length (1 to 4 frames) and which cuts flash.</p>
+
+<h3 id="fx">4 FX</h3>
+<p>FX places empty adjustment layers on the strongest moments of the music. You drop your own effects on them: a glow, a shake, a zoom.</p>
+<ul>
+<li><strong>First, one adjustment layer</strong> in the project: <code>Project panel › New Item › Adjustment Layer</code>. Until there is one, the tab shows how to make it. In a non-English Premiere, use "My adjustment layer has another name" and select yours.</li>
+<li><strong>Add FX layers</strong> places copies of it on the drops first, then the strongest moment of each part, then the strongest anywhere.</li>
+<li><strong>Layers, Shortest, Longest</strong>: how many layers and how long, in frames. Type a number or use the small arrows.</li>
+<li><strong>FX track</strong>: Auto uses the plugin's own track above the picture, or pick one. Your own adjustment layers are never touched.</li>
+<li><strong>Inside held shots</strong> adds short layers inside long shots, on the beat, so a held shot stays alive. <strong>Centred on the hit</strong> puts the middle of each layer on the hit.</li>
+<li><strong>The list</strong> shows where the layers go and why, in Premiere's timecode. Untick a line to leave it out. After placing, it shows what is on the timeline now.</li>
+<li><strong>Remove at playhead</strong> takes away only the plugin's layer under the playhead. <strong>Remove all</strong> takes away every layer the plugin placed, on any track.</li>
+<li><strong>Layer at playhead</strong>: one empty adjustment layer centred on the playhead, Frames each side before and after it (3 gives 6 frames). It needs no analyzed music.</li>
+<li>Once FX layers are on the timeline, every new SURPRISE ME! moves them onto its new cuts.</li>
+</ul>
+
+<h3 id="check">5 Check (Pro)</h3>
+<p>For an edit you cut yourself: cut by feel, then let the plugin tighten your cuts onto the music. Two steps.</p>
+<ol class="steps">
+<li><strong>Check my edit</strong> reads the cuts on your video track and changes nothing. For each cut it finds the nearest strong accent: a hit, a kick, a snare, a bass note, a chord change or the beat. The four tiles count them: <strong>On an accent</strong> (lime), <strong>To move</strong> (amber), <strong>Stay</strong> (nothing strong close enough) and <strong>Gaps</strong>. The EDIT lane shows the same.</li>
+<li><strong>Snap</strong> moves every amber cut onto its accent. One shot gets shorter, the next one longer; the picture inside the clips stays where it is.</li>
+</ol>
+<ul>
+<li><strong>A cut moves at most</strong> 1 bar, 12, 6 or 3 frames. Cuts further away stay put.</li>
+<li>Where a clip has no more picture to grow into, a gap is left exactly as wide as what is missing, for you to fill. Gaps show in pink.</li>
+<li>Very short runs of shots keep their own rhythm: a cut never travels more than half of the shorter shot next to it.</li>
+<li>Undo last action takes the whole snap back in one step.</li>
+</ul>
+
+<h3 id="match">6 Match (experimental, Pro)</h3>
+<p>Puts a second song in time with the first one, for a mashup or a switch from one song to the other. It is tested on few songs so far.</p>
+<ol class="steps">
+<li>Put the second song on another audio track, select it and press <strong>Analyze second song</strong>. Its beats show in the SONG 2 lane.</li>
+<li><strong>Speed to match</strong> tells you what to type in Premiere if the tempos differ: right-click the song › Speed/Duration, enter the number, tick Maintain Audio Pitch. A plugin cannot change speed itself. Then analyze it again.</li>
+<li>Put the playhead where the songs meet (<strong>Suggest a switch point</strong> finds a phrase start for you), choose Beat, Bar or Phrase, and press <strong>Line up at the playhead</strong>. <strong>Beats apart here</strong> shows how far apart they are. Undo moves the song back.</li>
+</ol>
+</section>
+
+<section class="sec" id="settings">
+<h2>Settings (the gear)</h2>
+<ul>
+<li><strong>Size</strong>: Auto (smaller on a small screen) or 100, 90, 80, 70%.</li>
+<li><strong>Simple / Pro</strong>, when the panel is too narrow to show the switch in the top bar.</li>
+<li><strong>Zoom and Sync</strong> of the live view; <kbd>Alt</kbd> or <kbd>Ctrl</kbd> with the mouse wheel over the live view also zooms.</li>
+<li><strong>Reset to defaults.</strong></li>
+<li><strong>Log</strong> and <strong>Copy log</strong>: what the plugin did, step by step. Send it with any bug report.</li>
+</ul>
+</section>
+
+<section class="sec" id="keys">
+<h2>Keys</h2>
+<p>Click into the panel first; keys are ignored while you type in a box.</p>
+<div class="tbl"><table>
+<tbody><tr><th>Key</th><th>Does</th></tr>
+<tr><td><kbd>←</kbd> / <kbd>→</kbd></td><td>Playhead to the beat before / after</td></tr>
+<tr><td><kbd>Shift</kbd> + <kbd>←</kbd> / <kbd>→</kbd></td><td>Playhead to the cut before / after</td></tr>
+<tr><td><kbd>F</kbd></td><td>Find this sound</td></tr>
+<tr><td><kbd>N</kbd> / <kbd>Shift</kbd> + <kbd>N</kbd></td><td>Next / previous moment of the selected sound</td></tr>
+<tr><td><kbd>X</kbd></td><td>Not this sound</td></tr>
+<tr><td><kbd>L</kbd></td><td>Focus or all layers</td></tr>
+<tr><td><kbd>Alt</kbd> + wheel</td><td>Zoom the live view</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="sec" id="limits">
+<h2>Known limits</h2>
+<ul>
+<li><strong>Tempo</strong>: slow songs (below about 75 BPM) can be counted twice as fast. If a ballad shows 134 instead of 67, press ½×. Songs that change tempo, or have no beat, are not supported yet.</li>
+<li><strong>Sections</strong>: intros, builds and drops are found by ear-like rules and can be a beat or two off on unusual tracks. The live view always shows what was found.</li>
+<li><strong>Hard techno with a rumble</strong> under the kick: kicks may land in SNARE or BASS. Use Your sound on one kick, or set CUSTOM to about 100 to 180 Hz.</li>
+<li><strong>Playback</strong>: a plugin cannot start or stop Premiere's playback. Press the space bar in Premiere.</li>
+<li><strong>Speed</strong>: a plugin cannot change clip speed, so Match tells you the number to type.</li>
+<li><strong>Undo</strong> works within one session of the panel, up to 8 steps. Effects or keyframes on clips the plugin replaced are not brought back by it; Premiere's own <kbd>Ctrl</kbd>+<kbd>Z</kbd> still does that.</li>
+<li><strong>First SURPRISE ME! on raw clips</strong> removes what is left of them outside the edit. Undo brings them back.</li>
+<li><strong>Mac</strong> is not tested yet.</li>
+</ul>
+</section>
+
+<section class="sec" id="faq">
+<h2>FAQ</h2>
+<p><strong>Is it really free?</strong> Yes. The beta is pay what you like, and $0 is fine.</p>
+<p><strong>What happens at 1.0?</strong> 1.0 will be a paid release. Everyone who reviews the beta on Gumroad gets it free.</p>
+<p><strong>Will it mess up my project?</strong> It adds cuts, markers and layers to your sequence and never changes your own effects or adjustment layers. Every action is one Undo away.</p>
+<p><strong>Does it need the internet?</strong> No. The analysis runs on your computer.</p>
+<p><strong>How is it different from beat-sync tools?</strong> Beat-sync cuts on the beat grid. DROP IT! hears the accents inside the music (kicks, snares, hits, drops, your own sounds) and can build a whole first cut for you to change.</p>
+</section>
+
+<section class="sec" id="bugs">
+<h2>Bugs and feedback</h2>
+<p>Found a bug? Email <a href="mailto:pszmilyk@gmail.com">pszmilyk@gmail.com</a> with:</p>
+<ol class="steps">
+<li>What you did, step by step.</li>
+<li>Your Premiere Pro version (Help › About Premiere Pro).</li>
+<li>The log: click the gear in the panel, press <strong>Copy log</strong>, and paste it into the email. If Premiere closed, copy the log right after you open it again.</li>
+</ol>
+<div class="note">
+<p style="color: #ffd9a0 !important"><strong>Want something added or changed?</strong> Leave a rating and a review on <a href="https://coloformia.gumroad.com/l/dropit" target="_blank" rel="noopener">Gumroad</a>: what worked, what didn't, what's missing. Your feedback decides what goes into 1.0, and every beta reviewer gets 1.0 free.</p>
+</div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 8px">
+<a class="btn" href="https://coloformia.gumroad.com/l/dropit" target="_blank" rel="noopener">Get DROP IT! · $0+</a>
+<a class="chip" href="../index.html">Back to the site</a>
+</div>
+<p style="font-size: 13px !important; color: #8f89a6 !important; margin-top: 16px">DROP IT! is made by Piotr Szmiłyk. Adobe and Premiere Pro are trademarks of Adobe; DROP IT! is not affiliated with Adobe.</p>
+</section>
+
+</main>
+</div>
+</div></div></div>
+<script src="../assets/js/morphdom.min.7de128d617.js" defer></script>
+<script src="../assets/js/components.1e3b0d8c33.js" defer></script>
+<script src="../assets/js/dc-lite.a9e351c5fe.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dropit.pages.dev/sitemap.xml
